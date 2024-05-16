@@ -54,7 +54,7 @@ Example:
 
 bash
 Copy code
-curl -X GET http://localhost:5000/api/books/60d5f2839b1e8c1b48b5b3c2
+curl -X GET http://localhost:5000/api/books/66463e8a978c00ddf0baa5b0
 4. Update a Book by ID
 Endpoint: PUT /api/books/:id
 Description: Updates an existing book record by its ID.
@@ -92,7 +92,7 @@ Example:
 
 bash
 Copy code
-curl -X DELETE http://localhost:5000/api/books/60d5f2839b1e8c1b48b5b3c2
+curl -X DELETE http://localhost:5000/api/books/66463e8a978c00ddf0baa5b0
 Summary of Endpoints
 POST /api/books: Create a new book.
 GET /api/books: Get all books.
