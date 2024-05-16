@@ -26,7 +26,7 @@ Example:
 
 http://localhost:5000/api/books
 
--H "Content-Type: application/json" 
+"Content-Type: application/json" 
 
 '{
   "name": "Harry Potter and the Goblet of Fire",
@@ -43,9 +43,9 @@ Status: 200 OK
 Body: An array of book objects.
 Example:
 
-bash
-Copy code
-curl -X GET http://localhost:5000/api/books
+http://localhost:5000/api/books
+
+
 3. Get a Single Book by ID
 Endpoint: GET /api/books/:id
 Description: Retrieves a single book record by its ID.
@@ -55,10 +55,9 @@ Response:
 Status: 200 OK
 Body: The requested book object.
 Example:
+http://localhost:5000/api/books/66463e8a978c00ddf0baa5b0
 
-bash
-Copy code
-curl -X GET http://localhost:5000/api/books/66463e8a978c00ddf0baa5b0
+
 4. Update a Book by ID
 Endpoint: PUT /api/books/:id
 Description: Updates an existing book record by its ID.
@@ -77,14 +76,11 @@ Status: 200 OK
 Body: The updated book object.
 Example:
  http://localhost:5000/api/books/60d5f2839b1e8c1b48b5b3c2 
- 
- - "Content-Type: application/json"
- -
- - '{
+ "Content-Type: application/json"
+{
   "name": "Harry Potter and the Goblet of Fire - Updated",
   "img": "https://bit.ly/3bQw3A5",
   "summary": "Harry competes in the Triwizard Tournament and faces new challenges at Hogwarts. Updated."
-
 }'
 
 5. Delete a Book by ID
@@ -97,7 +93,9 @@ Status: 200 OK
 Body: The deleted book object.
 Example:
 http://localhost:5000/api/books/66463e8a978c00ddf0baa5b0
-Summary of Endpoints
+
+
+Summary of Endpoints:
 POST /api/books: Create a new book.
 GET /api/books: Get all books.
 GET /api/books/:id: Get a single book by ID.
